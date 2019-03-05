@@ -46,7 +46,7 @@ public class EmployeeCreateCommand implements ResultCommandInterface<Employee> {
 	public EmployeeRepositoryInterface getEmployeeRepository() {
 		return this.employeeRepository;
 	}
-	public EmployeeCreateCommand setProductRepository(EmployeeRepositoryInterface employeeRepository) {
+	public EmployeeCreateCommand setEmployeeRepository(EmployeeRepositoryInterface employeeRepository) {
 		this.employeeRepository = employeeRepository;
 		return this;
 	}
