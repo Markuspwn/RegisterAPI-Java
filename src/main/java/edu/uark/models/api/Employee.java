@@ -10,12 +10,12 @@ public class Employee {
 	//record ID
 	private UUID record_id;
 
-	public UUID getRecord_ID()
+	public UUID getId()
 	{
 		return this.record_id;
 	}
 
-	public Employee setRecord_ID(UUID record_id) {
+	public Employee setId(UUID record_id) {
 		this.record_id = record_id;
 		return this;
 	}
@@ -100,7 +100,7 @@ public class Employee {
 
 	public Employee(EmployeeEntity employeeEntity)
 	{
-		this.record_id = employeeEntity.getRecord_ID();
+		this.record_id = employeeEntity.getId();
 		this.first_name = employeeEntity.getFirstName();
 		this.last_name = employeeEntity.getLastName();
 		this.emp_ID = employeeEntity.getEmpID();

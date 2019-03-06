@@ -29,7 +29,7 @@ public class EmployeeEntity extends BaseEntity<EmployeeEntity> {
 	@Override
 	protected Map<String, Object> fillRecord(Map<String, Object> record)
 	{
-		record.put(EmployeeFieldNames.REC_ID, this.record_ID);
+		// record.put(EmployeeFieldNames.REC_ID, this.record_ID);
 		record.put(EmployeeFieldNames.F_NAME, this.first_Name);
 		record.put(EmployeeFieldNames.L_NAME, this.last_Name);
 		record.put(EmployeeFieldNames.EMP_ID, this.emp_ID);
@@ -46,13 +46,13 @@ public class EmployeeEntity extends BaseEntity<EmployeeEntity> {
 	//string
 
 	//declare
-	private UUID record_ID;
+	//private UUID record_ID;
 
 	//get: method
-	public UUID getRecord_ID()
-	{
-		return this.record_ID;
-	}
+	//public UUID getRecord_ID()
+//	{
+//		return this.record_ID;
+//	}
 
 	//set: method
 //	public EmployeeEntity setRecord_ID(UUID record_ID)
@@ -230,7 +230,7 @@ public class EmployeeEntity extends BaseEntity<EmployeeEntity> {
 	{
 		super(DatabaseTable.EMPLOYEE);
 
-		this.record_ID = apiEmployee.getRecord_ID();
+		//this.record_ID = apiEmployee.getRecord_ID();
 		this.first_Name = apiEmployee.getFirstName();
 		this.last_Name = apiEmployee.getLastName();
 		this.emp_ID = apiEmployee.getEmpID();
